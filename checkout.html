@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Checkout de demostración | Maison Élise</title>
+	<meta name="description" content="Vista de checkout de demostración de Maison Élise. No se envían datos ni se procesan pagos.">
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="min-h-screen bg-stone-50 font-sans text-stone-900">
+	<a href="#contenido-principal" class="sr-only rounded bg-white p-3 text-stone-900 focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#713E43]">Saltar al contenido</a>
+	<header class="border-b border-stone-200 bg-white">
+		<nav aria-label="Navegación principal" class="mx-auto flex max-w-7xl flex-wrap items-center gap-4 px-4 py-5 sm:px-6 lg:px-8">
+			<a href="index.html" aria-label="Maison Élise, inicio" class="font-serif text-2xl text-stone-900">Maison Élise</a>
+			<a href="catalogo.html" class="text-sm text-stone-700 underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Catálogo</a>
+			<a href="carrito.html" class="text-sm text-stone-700 underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Carrito</a>
+			<a href="checkout.html" aria-current="page" class="rounded-sm text-sm font-medium text-stone-900 underline decoration-[#713E43] decoration-2 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Checkout</a>
+			<a href="catalogo.html" class="text-sm text-stone-700 underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Buscar prendas</a>
+			<span aria-label="Acceso a cuenta no disponible en esta demostración" class="text-sm text-stone-700">Mi cuenta <span class="text-xs text-stone-600">(no disponible)</span></span>
+		</nav>
+	</header>
+
+	<main id="contenido-principal" class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+		<section aria-labelledby="checkout-titulo" class="py-10 md:py-14">
+			<p class="text-sm font-medium uppercase tracking-wide text-[#713E43]">Maison Élise · ejemplo</p>
+			<h1 id="checkout-titulo" class="mt-3 font-serif text-4xl leading-tight text-stone-900 sm:text-5xl">Checkout de demostración</h1>
+			<p class="mt-4 max-w-3xl text-base leading-7 text-stone-700">Esta página ilustra los pasos de una compra. No se guardan ni se envían datos y no se realizará ningún pedido ni pago.</p>
+		</section>
+
+		<div class="grid grid-cols-1 items-start gap-8 pb-12 md:grid-cols-[minmax(0,1fr)_20rem] md:gap-10 md:pb-16">
+			<div class="min-w-0 space-y-6">
+				<section id="datos-personales" aria-labelledby="paso-personal-titulo" class="border border-stone-200 bg-white p-5 sm:p-6">
+					<p class="text-xs font-semibold uppercase tracking-wide text-[#713E43]">Paso 1</p>
+					<h2 id="paso-personal-titulo" class="mt-2 font-serif text-2xl text-stone-900">Datos personales</h2>
+					<p class="mt-2 text-sm leading-6 text-stone-700">Campos desactivados de ejemplo; no introduzcas datos personales.</p>
+					<div class="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
+						<div>
+							<label for="nombre" class="mb-1.5 block text-sm font-medium text-stone-800">Nombre (ejemplo)</label>
+							<input id="nombre" name="nombre" type="text" value="Nombre de ejemplo" disabled class="w-full rounded border border-stone-300 bg-stone-100 px-3 py-2.5 text-sm text-stone-700 disabled:cursor-not-allowed disabled:opacity-100">
+						</div>
+						<div>
+							<label for="apellidos" class="mb-1.5 block text-sm font-medium text-stone-800">Apellidos (ejemplo)</label>
+							<input id="apellidos" name="apellidos" type="text" value="Apellidos de ejemplo" disabled class="w-full rounded border border-stone-300 bg-stone-100 px-3 py-2.5 text-sm text-stone-700 disabled:cursor-not-allowed disabled:opacity-100">
+						</div>
+						<div>
+							<label for="correo" class="mb-1.5 block text-sm font-medium text-stone-800">Correo electrónico (ejemplo)</label>
+							<input id="correo" name="correo" type="email" value="ejemplo@correo.invalid" disabled class="w-full rounded border border-stone-300 bg-stone-100 px-3 py-2.5 text-sm text-stone-700 disabled:cursor-not-allowed disabled:opacity-100">
+						</div>
+						<div>
+							<label for="telefono" class="mb-1.5 block text-sm font-medium text-stone-800">Teléfono (ejemplo)</label>
+							<input id="telefono" name="telefono" type="tel" value="000 000 000" disabled class="w-full rounded border border-stone-300 bg-stone-100 px-3 py-2.5 text-sm text-stone-700 disabled:cursor-not-allowed disabled:opacity-100">
+						</div>
+					</div>
+				</section>
+
+				<section id="direccion-entrega" aria-labelledby="paso-direccion-titulo" class="border border-stone-200 bg-white p-5 sm:p-6">
+					<p class="text-xs font-semibold uppercase tracking-wide text-[#713E43]">Paso 2</p>
+					<h2 id="paso-direccion-titulo" class="mt-2 font-serif text-2xl text-stone-900">Dirección de entrega</h2>
+					<p class="mt-2 text-sm leading-6 text-stone-700">Datos ficticios y desactivados, mostrados solo como referencia.</p>
+					<div class="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
+						<div class="sm:col-span-2">
+							<label for="direccion" class="mb-1.5 block text-sm font-medium text-stone-800">Dirección (ejemplo)</label>
+							<input id="direccion" name="direccion" type="text" value="Calle de ejemplo, 10" disabled class="w-full rounded border border-stone-300 bg-stone-100 px-3 py-2.5 text-sm text-stone-700 disabled:cursor-not-allowed disabled:opacity-100">
+						</div>
+						<div>
+							<label for="ciudad" class="mb-1.5 block text-sm font-medium text-stone-800">Ciudad (ejemplo)</label>
+							<input id="ciudad" name="ciudad" type="text" value="Ciudad de ejemplo" disabled class="w-full rounded border border-stone-300 bg-stone-100 px-3 py-2.5 text-sm text-stone-700 disabled:cursor-not-allowed disabled:opacity-100">
+						</div>
+						<div>
+							<label for="codigo-postal" class="mb-1.5 block text-sm font-medium text-stone-800">Código postal (ejemplo)</label>
+							<input id="codigo-postal" name="codigo-postal" type="text" value="00000" disabled class="w-full rounded border border-stone-300 bg-stone-100 px-3 py-2.5 text-sm text-stone-700 disabled:cursor-not-allowed disabled:opacity-100">
+						</div>
+						<div class="sm:col-span-2">
+							<label for="pais" class="mb-1.5 block text-sm font-medium text-stone-800">País (ejemplo)</label>
+							<input id="pais" name="pais" type="text" value="País de ejemplo" disabled class="w-full rounded border border-stone-300 bg-stone-100 px-3 py-2.5 text-sm text-stone-700 disabled:cursor-not-allowed disabled:opacity-100">
+						</div>
+					</div>
+				</section>
+
+				<section id="pago-tarjeta" aria-labelledby="paso-pago-titulo" class="border border-stone-200 bg-white p-5 sm:p-6">
+					<p class="text-xs font-semibold uppercase tracking-wide text-[#713E43]">Paso 3</p>
+					<h2 id="paso-pago-titulo" class="mt-2 font-serif text-2xl text-stone-900">Pago con tarjeta</h2>
+					<div class="mt-4 border-l-2 border-[#713E43] bg-stone-50 px-4 py-3">
+						<p class="font-medium text-stone-900">Simulación sin pago</p>
+						<p class="mt-1 text-sm leading-6 text-stone-700">No solicites ni introduzcas datos de tarjeta. Esta demostración no incluye campos financieros, no se conecta a una pasarela y no procesa pagos.</p>
+					</div>
+				</section>
+			</div>
+
+			<aside aria-labelledby="resumen-titulo" class="border border-stone-200 bg-white p-5 sm:p-6 md:sticky md:top-6">
+				<p class="text-xs font-medium uppercase tracking-wide text-[#713E43]">Pedido de ejemplo</p>
+				<h2 id="resumen-titulo" class="mt-2 font-serif text-2xl text-stone-900">Resumen ilustrativo</h2>
+				<ul class="mt-5 divide-y divide-stone-200">
+					<li class="flex justify-between gap-4 py-3 text-sm">
+						<div><p class="font-medium text-stone-900">Camisa Claire</p><p class="mt-1 text-stone-600">Cantidad: 1 · ejemplo</p></div>
+						<data value="89.00" class="shrink-0 font-medium">89,00 €</data>
+					</li>
+					<li class="flex justify-between gap-4 py-3 text-sm">
+						<div><p class="font-medium text-stone-900">Pantalón Jules</p><p class="mt-1 text-stone-600">Cantidad: 1 · ejemplo</p></div>
+						<data value="125.00" class="shrink-0 font-medium">125,00 €</data>
+					</li>
+					<li class="flex justify-between gap-4 py-3 text-sm">
+						<div><p class="font-medium text-stone-900">Mocasines Étienne</p><p class="mt-1 text-stone-600">Cantidad: 1 · ejemplo</p></div>
+						<data value="145.00" class="shrink-0 font-medium">145,00 €</data>
+					</li>
+				</ul>
+				<dl class="mt-3 space-y-3 border-t border-stone-200 pt-4 text-sm">
+					<div class="flex justify-between gap-4"><dt class="text-stone-700">Subtotal ilustrativo</dt><dd class="font-medium"><data value="359.00">359,00 €</data></dd></div>
+					<div class="flex justify-between gap-4"><dt class="text-stone-700">Impuestos ilustrativos</dt><dd class="font-medium"><data value="71.80">71,80 €</data></dd></div>
+					<div class="flex justify-between gap-4 border-t border-stone-200 pt-4 text-base"><dt class="font-semibold text-stone-900">Total ilustrativo</dt><dd class="font-semibold text-stone-900"><data value="430.80">430,80 €</data></dd></div>
+				</dl>
+				<p class="mt-5 border-l-2 border-[#713E43] bg-stone-50 px-3 py-2 text-xs leading-5 text-stone-700">Productos, cantidades, impuestos e importes son de ejemplo; no representan condiciones fiscales ni comerciales reales.</p>
+				<a href="carrito.html" class="mt-6 inline-flex min-h-11 w-full items-center justify-center rounded bg-[#713E43] px-4 py-3 text-center text-sm font-medium text-white hover:bg-[#5f3338] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-900">Volver al carrito</a>
+			</aside>
+		</div>
+	</main>
+
+	<footer class="border-t border-stone-200 bg-white">
+		<div class="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-10 sm:grid-cols-2 sm:px-6 lg:grid-cols-3 lg:px-8">
+			<section aria-labelledby="footer-categorias">
+				<h2 id="footer-categorias" class="font-serif text-lg text-stone-900">Categorías</h2>
+				<ul class="mt-3 space-y-2 text-sm text-stone-700">
+					<li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-[#713E43]" href="catalogo.html">Calzado</a></li>
+					<li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-[#713E43]" href="catalogo.html">Camisas</a></li>
+					<li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-[#713E43]" href="catalogo.html">Pantalones</a></li>
+					<li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-[#713E43]" href="catalogo.html">Accesorios</a></li>
+				</ul>
+			</section>
+			<section aria-labelledby="footer-informacion">
+				<h2 id="footer-informacion" class="font-serif text-lg text-stone-900">Información</h2>
+				<ul class="mt-3 space-y-2 text-sm text-stone-700">
+					<li>Términos y condiciones</li>
+					<li>Política de privacidad</li>
+					<li>Sobre la marca</li>
+				</ul>
+			</section>
+			<section aria-labelledby="footer-contacto">
+				<h2 id="footer-contacto" class="font-serif text-lg text-stone-900">Contacto</h2>
+				<p class="mt-3 text-sm text-stone-700">Información de contacto de demostración.</p>
+			</section>
+		</div>
+	</footer>
+</body>
+</html>

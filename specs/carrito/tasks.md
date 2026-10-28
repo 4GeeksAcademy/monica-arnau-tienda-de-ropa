@@ -22,7 +22,7 @@ Marca cada tarea con `[x]` solo después de completarla. Las tareas de verificac
 
 ## Checkout — tarea condicionada
 
-- [ ] Cuando `checkout.html` exista, añadir en `carrito.html` un enlace «Comprar» o «Continuar al checkout» con destino válido. No completar esta tarea antes de que exista la página.
+- [x] Cuando `checkout.html` exista, añadir en `carrito.html` un enlace «Comprar» o «Continuar al checkout» con destino válido. No completar esta tarea antes de que exista la página.
 
 ## Verificación
 
