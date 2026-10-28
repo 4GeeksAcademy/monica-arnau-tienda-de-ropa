@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Catálogo | Maison Élise</title>
+	<meta name="description" content="Explora la selección de prendas y accesorios de demostración de Maison Élise.">
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="min-h-screen bg-stone-50 font-sans text-stone-900">
+	<header class="border-b border-stone-200 bg-white">
+		<nav aria-label="Navegación principal" class="mx-auto flex max-w-7xl flex-wrap items-center gap-4 px-4 py-5 sm:px-6 lg:px-8">
+			<a href="index.html" aria-label="Maison Élise, inicio" class="font-serif text-2xl text-stone-900">Maison Élise</a>
+			<a href="catalogo.html" aria-current="page" class="rounded-sm text-sm font-medium text-stone-900 underline decoration-[#713E43] decoration-2 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Catálogo</a>
+			<a href="carrito.html" class="text-sm text-stone-700 underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Carrito</a>
+			<form action="catalogo.html" method="get" role="search" class="flex min-w-0 flex-1 flex-wrap items-center gap-2 sm:ml-auto sm:flex-nowrap">
+				<label for="busqueda" class="text-sm text-stone-700">Buscar catálogo</label>
+				<input id="busqueda" name="q" type="search" autocomplete="off" class="min-w-0 flex-1 rounded border border-stone-300 bg-white px-3 py-2 text-stone-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#713E43]">
+				<button type="submit" class="min-h-11 rounded bg-[#713E43] px-4 py-2 text-sm font-medium text-white hover:bg-[#5f3338] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-900">Buscar</button>
+			</form>
+			<span aria-label="Acceso a cuenta no disponible en esta demostración" class="text-sm text-stone-700">Mi cuenta <span class="text-xs text-stone-600">(no disponible)</span></span>
+		</nav>
+		<p class="mx-auto max-w-7xl px-4 pb-3 text-xs text-stone-600 sm:px-6 lg:px-8">La búsqueda solo abre este catálogo de demostración; no interpreta la consulta.</p>
+	</header>
+
+	<main id="contenido-principal" class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+		<section aria-labelledby="catalogo-titulo" class="py-10 md:py-14">
+			<p class="text-sm font-medium uppercase tracking-wide text-[#713E43]">Maison Élise · selección de temporada</p>
+			<div class="mt-3 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+				<div class="max-w-2xl">
+					<h1 id="catalogo-titulo" class="font-serif text-4xl leading-tight text-stone-900 sm:text-5xl">Catálogo</h1>
+					<p class="mt-4 text-base leading-7 text-stone-700">Una selección de prendas y accesorios de líneas sencillas, reunida para explorar el estilo de la casa.</p>
+				</div>
+				<p class="text-sm font-medium text-stone-700">20 productos de demostración</p>
+			</div>
+			<p class="mt-3 text-sm text-stone-600">Nombres, imágenes y precios ilustrativos; este catálogo no representa inventario real.</p>
+		</section>
+
+		<section aria-labelledby="filtros-titulo" class="border-y border-stone-200 py-6">
+			<h2 id="filtros-titulo" class="font-serif text-2xl text-stone-900">Explorar la selección</h2>
+			<p id="aviso-filtros" class="mt-2 text-sm text-stone-700">Filtros de demostración: no modifican los productos mostrados.</p>
+			<fieldset disabled aria-describedby="aviso-filtros" class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
+				<div class="flex min-w-0 flex-col gap-2">
+					<label for="filtro-categoria" class="text-sm font-medium text-stone-800">Categoría</label>
+					<select id="filtro-categoria" name="categoria" class="min-h-11 w-full rounded border border-stone-300 bg-white px-3 py-2 text-stone-900 disabled:cursor-not-allowed disabled:opacity-75">
+						<option selected>Todas las categorías</option>
+						<option>Calzado</option>
+						<option>Camisas</option>
+						<option>Pantalones</option>
+						<option>Accesorios</option>
+					</select>
+				</div>
+				<div class="flex min-w-0 flex-col gap-2">
+					<label for="filtro-talla" class="text-sm font-medium text-stone-800">Talla (orientativa)</label>
+					<select id="filtro-talla" name="talla" class="min-h-11 w-full rounded border border-stone-300 bg-white px-3 py-2 text-stone-900 disabled:cursor-not-allowed disabled:opacity-75">
+						<option selected>Todas las tallas</option>
+						<optgroup label="Ropa — tallaje orientativo"><option>Ropa: XS</option><option>Ropa: S</option><option>Ropa: M</option><option>Ropa: L</option></optgroup>
+						<optgroup label="Calzado — tallaje orientativo"><option>Calzado: 37</option><option>Calzado: 38</option><option>Calzado: 39</option><option>Calzado: 40</option></optgroup>
+						<optgroup label="Accesorios — tallaje orientativo"><option>Accesorios: talla única</option></optgroup>
+					</select>
+				</div>
+			</fieldset>
+			<p class="mt-3 text-xs leading-5 text-stone-600">Las referencias de talla son ejemplos separados por tipo de producto; no comparten una escala.</p>
+		</section>
+
+		<section aria-labelledby="productos-titulo" class="py-8 md:py-12">
+			<div class="mb-6 flex flex-wrap items-end justify-between gap-3">
+				<div>
+					<p class="text-sm font-medium uppercase tracking-wide text-[#656B55]">Selección de Maison Élise</p>
+					<h2 id="productos-titulo" class="mt-2 font-serif text-3xl text-stone-900">Prendas y accesorios</h2>
+				</div>
+				<p class="text-sm text-stone-700">Los enlaces abren la misma ficha de producto de demostración.</p>
+			</div>
+			<ul class="grid grid-cols-1 gap-x-5 gap-y-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+				<li><article class="h-full min-w-0 border border-stone-200 bg-white p-3 sm:p-4"><img src="assets/images/catalogo-camisa-claire.webp" alt="Camisa clara de vestir con un detalle de corbata estampada." width="700" height="900" class="aspect-[4/5] w-full object-cover"><p class="mt-4 text-xs uppercase tracking-wide text-stone-600">Camisas</p><h3 class="mt-1 font-serif text-lg">Camisa Claire</h3><p class="mt-1 text-sm font-medium">89,00 €</p><a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver camisa Claire</a></article></li>
+				<li><article class="h-full min-w-0 border border-stone-200 bg-white p-3 sm:p-4"><img src="assets/images/catalogo-chaqueta-emile.webp" alt="Chaqueta bomber color teja presentada en una fotografía editorial." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover"><p class="mt-4 text-xs uppercase tracking-wide text-stone-600">Camisas</p><h3 class="mt-1 font-serif text-lg">Chaqueta Émile</h3><p class="mt-1 text-sm font-medium">159,00 €</p><a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver chaqueta Émile</a></article></li>
+				<li><article class="h-full min-w-0 border border-stone-200 bg-white p-3 sm:p-4"><img src="assets/images/catalogo-abrigo-simone.webp" alt="Abrigo borgoña llevado en una escena urbana de temporada." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover"><p class="mt-4 text-xs uppercase tracking-wide text-stone-600">Prendas exteriores</p><h3 class="mt-1 font-serif text-lg">Abrigo Simone</h3><p class="mt-1 text-sm font-medium">219,00 €</p><a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver abrigo Simone</a></article></li>
+				<li><article class="h-full min-w-0 border border-stone-200 bg-white p-3 sm:p-4"><img src="assets/images/catalogo-camisa-amelie.webp" alt="Camisa clara de corte clásico fotografiada en una composición editorial." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover"><p class="mt-4 text-xs uppercase tracking-wide text-stone-600">Camisas</p><h3 class="mt-1 font-serif text-lg">Camisa Amélie</h3><p class="mt-1 text-sm font-medium">95,00 €</p><a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver camisa Amélie</a></article></li>
+				<li><article class="h-full min-w-0 border border-stone-200 bg-white p-3 sm:p-4"><img src="assets/images/catalogo-camisa-louise.webp" alt="Camisa blanca de vestir con cuello clásico fotografiada sobre fondo neutro." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover"><p class="mt-4 text-xs uppercase tracking-wide text-stone-600">Camisas</p><h3 class="mt-1 font-serif text-lg">Camisa Louise</h3><p class="mt-1 text-sm font-medium">105,00 €</p><a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver camisa Louise</a></article></li>
+				<li><article class="h-full min-w-0 border border-stone-200 bg-white p-3 sm:p-4"><img src="assets/images/catalogo-pantalon-camille.webp" alt="Pantalón vaquero azul de corte recto mostrado en una imagen de moda." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover"><p class="mt-4 text-xs uppercase tracking-wide text-stone-600">Pantalones</p><h3 class="mt-1 font-serif text-lg">Pantalón droit Camille</h3><p class="mt-1 text-sm font-medium">119,00 €</p><a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver pantalón Camille</a></article></li>
+				<li><article class="h-full min-w-0 border border-stone-200 bg-white p-3 sm:p-4"><img src="assets/images/catalogo-pantalon-jules.webp" alt="Pantalón oscuro de vestir con silueta recta sobre fondo claro." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover"><p class="mt-4 text-xs uppercase tracking-wide text-stone-600">Pantalones</p><h3 class="mt-1 font-serif text-lg">Pantalón Jules</h3><p class="mt-1 text-sm font-medium">125,00 €</p><a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver pantalón Jules</a></article></li>
+				<li><article class="h-full min-w-0 border border-stone-200 bg-white p-3 sm:p-4"><img src="assets/images/catalogo-pantalon-margot.webp" alt="Pantalón de corte amplio en tono neutro presentado en una fotografía editorial." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover"><p class="mt-4 text-xs uppercase tracking-wide text-stone-600">Pantalones</p><h3 class="mt-1 font-serif text-lg">Pantalón fluido Margot</h3><p class="mt-1 text-sm font-medium">132,00 €</p><a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver pantalón Margot</a></article></li>
+				<li><article class="h-full min-w-0 border border-stone-200 bg-white p-3 sm:p-4"><img src="assets/images/catalogo-bailarinas-celeste.webp" alt="Bailarinas de piel en tono claro fotografiadas sobre fondo neutro." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover"><p class="mt-4 text-xs uppercase tracking-wide text-stone-600">Calzado</p><h3 class="mt-1 font-serif text-lg">Bailarinas Céleste</h3><p class="mt-1 text-sm font-medium">110,00 €</p><a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver bailarinas Céleste</a></article></li>
+				<li><article class="h-full min-w-0 border border-stone-200 bg-white p-3 sm:p-4"><img src="assets/images/catalogo-zapatillas-leon.webp" alt="Zapatillas deportivas rojas fotografiadas sobre un fondo claro." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover"><p class="mt-4 text-xs uppercase tracking-wide text-stone-600">Calzado</p><h3 class="mt-1 font-serif text-lg">Zapatillas de ville Léon</h3><p class="mt-1 text-sm font-medium">125,00 €</p><a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver zapatillas Léon</a></article></li>
+				<li><article class="h-full min-w-0 border border-stone-200 bg-white p-3 sm:p-4"><img src="assets/images/catalogo-mocasines-etienne.webp" alt="Mocasines bajos de piel marrón y azul fotografiados en detalle." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover"><p class="mt-4 text-xs uppercase tracking-wide text-stone-600">Calzado</p><h3 class="mt-1 font-serif text-lg">Mocasines Étienne</h3><p class="mt-1 text-sm font-medium">145,00 €</p><a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver mocasines Étienne</a></article></li>
+				<li><article class="h-full min-w-0 border border-stone-200 bg-white p-3 sm:p-4"><img src="assets/images/catalogo-sandalias-anais.webp" alt="Sandalias doradas de mujer fotografiadas como producto sobre un fondo neutro." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover"><p class="mt-4 text-xs uppercase tracking-wide text-stone-600">Calzado</p><h3 class="mt-1 font-serif text-lg">Sandalias Anaïs</h3><p class="mt-1 text-sm font-medium">98,00 €</p><a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver sandalias Anaïs</a></article></li>
+				<li><article class="h-full min-w-0 border border-stone-200 bg-white p-3 sm:p-4"><img src="assets/images/catalogo-bolso-louise.webp" alt="Bolso de mano estructurado en color cálido fotografiado sobre fondo claro." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover"><p class="mt-4 text-xs uppercase tracking-wide text-stone-600">Accesorios</p><h3 class="mt-1 font-serif text-lg">Bolso Louise</h3><p class="mt-1 text-sm font-medium">175,00 €</p><a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver bolso Louise</a></article></li>
+				<li><article class="h-full min-w-0 border border-stone-200 bg-white p-3 sm:p-4"><img src="assets/images/catalogo-bolso-eloise.webp" alt="Bolso pequeño de piel con asa corta presentado en una fotografía de producto." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover"><p class="mt-4 text-xs uppercase tracking-wide text-stone-600">Accesorios</p><h3 class="mt-1 font-serif text-lg">Sac porté Éloïse</h3><p class="mt-1 text-sm font-medium">148,00 €</p><a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver bolso Éloïse</a></article></li>
+				<li><article class="h-full min-w-0 border border-stone-200 bg-white p-3 sm:p-4"><img src="assets/images/catalogo-bolso-noemie.webp" alt="Bolso de hombro de tono neutro con diseño sencillo fotografiado en detalle." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover"><p class="mt-4 text-xs uppercase tracking-wide text-stone-600">Accesorios</p><h3 class="mt-1 font-serif text-lg">Sac seau Noémie</h3><p class="mt-1 text-sm font-medium">162,00 €</p><a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver bolso Noémie</a></article></li>
+				<li><article class="h-full min-w-0 border border-stone-200 bg-white p-3 sm:p-4"><img src="assets/images/catalogo-reloj-heloise.webp" alt="Reloj de pulsera con correa de cuero fotografiado sobre fondo blanco." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover"><p class="mt-4 text-xs uppercase tracking-wide text-stone-600">Accesorios</p><h3 class="mt-1 font-serif text-lg">Montre Héloïse</h3><p class="mt-1 text-sm font-medium">135,00 €</p><a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver reloj Héloïse</a></article></li>
+				<li><article class="h-full min-w-0 border border-stone-200 bg-white p-3 sm:p-4"><img src="assets/images/catalogo-blusa-adele.webp" alt="Blusa clara de mujer presentada en una fotografía de producto." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover"><p class="mt-4 text-xs uppercase tracking-wide text-stone-600">Camisas</p><h3 class="mt-1 font-serif text-lg">Blouse Adèle</h3><p class="mt-1 text-sm font-medium">99,00 €</p><a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver blusa Adèle</a></article></li>
+				<li><article class="h-full min-w-0 border border-stone-200 bg-white p-3 sm:p-4"><img src="assets/images/catalogo-chaqueta-emile-otra.webp" alt="Chaqueta bomber de mujer fotografiada de frente." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover"><p class="mt-4 text-xs uppercase tracking-wide text-stone-600">Prendas exteriores</p><h3 class="mt-1 font-serif text-lg">Chaqueta Émile</h3><p class="mt-1 text-sm font-medium">142,00 €</p><a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver chaqueta Émile</a></article></li>
+				<li><article class="h-full min-w-0 border border-stone-200 bg-white p-3 sm:p-4"><img src="assets/images/catalogo-chaqueta-elise.webp" alt="Chaqueta de cuero en tono oscuro fotografiada sobre un fondo neutro." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover"><p class="mt-4 text-xs uppercase tracking-wide text-stone-600">Prendas exteriores</p><h3 class="mt-1 font-serif text-lg">Chaqueta Élise</h3><p class="mt-1 text-sm font-medium">172,00 €</p><a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver chaqueta Élise</a></article></li>
+				<li><article class="h-full min-w-0 border border-stone-200 bg-white p-3 sm:p-4"><img src="assets/images/catalogo-abrigo-etoile.webp" alt="Abrigo de lana naranja de inspiración francesa fotografiado en una composición editorial." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover"><p class="mt-4 text-xs uppercase tracking-wide text-stone-600">Prendas exteriores</p><h3 class="mt-1 font-serif text-lg">Manteau Étoile</h3><p class="mt-1 text-sm font-medium">225,00 €</p><a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver abrigo Étoile</a></article></li>
+			</ul>
+		</section>
+	</main>
+
+	<footer class="border-t border-stone-200 bg-white">
+		<div class="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-10 sm:grid-cols-2 sm:px-6 lg:grid-cols-3 lg:px-8">
+			<section aria-labelledby="footer-categorias">
+				<h2 id="footer-categorias" class="font-serif text-lg text-stone-900">Categorías</h2>
+				<ul class="mt-3 space-y-2 text-sm text-stone-700">
+					<li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-[#713E43]" href="catalogo.html">Calzado</a></li>
+					<li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-[#713E43]" href="catalogo.html">Camisas</a></li>
+					<li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-[#713E43]" href="catalogo.html">Pantalones</a></li>
+					<li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-[#713E43]" href="catalogo.html">Accesorios</a></li>
+				</ul>
+			</section>
+			<section aria-labelledby="footer-informacion">
+				<h2 id="footer-informacion" class="font-serif text-lg text-stone-900">Información</h2>
+				<ul class="mt-3 space-y-2 text-sm text-stone-700">
+					<li>Términos y condiciones</li>
+					<li>Política de privacidad</li>
+					<li>Sobre la marca</li>
+				</ul>
+			</section>
+			<section aria-labelledby="footer-contacto">
+				<h2 id="footer-contacto" class="font-serif text-lg text-stone-900">Contacto</h2>
+				<p class="mt-3 text-sm text-stone-700">Información de contacto de demostración.</p>
+			</section>
+		</div>
+	</footer>
+</body>
+</html>
