@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Maison Élise | Moda contemporánea</title>
+	<meta name="description" content="Descubre la selección de temporada y las prendas esenciales de Maison Élise.">
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="min-h-screen bg-stone-50 font-sans text-stone-900">
+	<header class="border-b border-stone-200 bg-white">
+		<nav aria-label="Navegación principal" class="mx-auto flex max-w-7xl flex-wrap items-center gap-4 px-4 py-5 sm:px-6 lg:px-8">
+			<a href="index.html" aria-label="Maison Élise, inicio" class="font-serif text-2xl text-stone-900">Maison Élise</a>
+			<a href="catalogo.html" class="text-sm text-stone-700 underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Catálogo</a>
+			<a href="carrito.html" class="text-sm text-stone-700 underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Carrito</a>
+			<form action="catalogo.html" method="get" role="search" class="flex min-w-0 flex-1 flex-wrap items-center gap-2 sm:ml-auto sm:flex-nowrap">
+				<label for="busqueda" class="sr-only">Buscar prendas</label>
+				<input id="busqueda" name="q" type="search" placeholder="Buscar prendas" autocomplete="off" class="min-w-0 flex-1 rounded border border-stone-300 bg-white px-3 py-2 text-stone-900 placeholder:text-stone-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#713E43]">
+				<button type="submit" class="rounded bg-[#713E43] px-4 py-2 text-sm font-medium text-white hover:bg-[#5f3338] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-900">Buscar</button>
+			</form>
+			<span aria-label="Acceso a cuenta no disponible en esta demostración" class="text-sm text-stone-700">Mi cuenta</span>
+		</nav>
+	</header>
+	<main id="contenido-principal" itemscope itemtype="https://schema.org/WebPage" class="mx-auto min-h-48 w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+		<section aria-labelledby="campana-titulo" class="grid gap-8 py-10 md:grid-cols-2 md:items-center md:gap-12 md:py-16">
+			<div class="max-w-xl">
+				<p class="text-sm font-medium uppercase text-[#713E43]">Colección de temporada</p>
+				<h1 id="campana-titulo" itemprop="name" class="mt-3 font-serif text-4xl leading-tight text-stone-900 sm:text-5xl">El otoño, en su forma más serena</h1>
+				<p class="mt-5 max-w-lg text-base leading-7 text-stone-700">Prendas esenciales y tonos serenos para acompañar el cambio de estación.</p>
+				<a href="catalogo.html" class="mt-7 inline-flex min-h-11 items-center rounded bg-[#713E43] px-5 py-3 text-sm font-medium text-white hover:bg-[#5f3338] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900">Explorar colección</a>
+			</div>
+			<img src="assets/images/campana-otonal.webp" alt="Mujer con abrigo borgoña y gafas de sol, sosteniendo bolsas de compra frente a una pared clara." width="1400" height="1800" class="aspect-[4/5] w-full object-cover">
+		</section>
+		<section aria-labelledby="novedades-titulo" class="border-t border-stone-200 py-12 md:py-16">
+			<div class="mb-7 flex flex-wrap items-end justify-between gap-3">
+				<div>
+					<p class="text-sm font-medium uppercase text-[#713E43]">Recién llegados</p>
+					<h2 id="novedades-titulo" class="mt-2 font-serif text-3xl text-stone-900">Nuevos lanzamientos</h2>
+					  <p class="mt-2 text-sm text-stone-700">Productos y precios de demostración.</p>
+				</div>
+			</div>
+			<div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+				<article class="min-w-0 border border-stone-200 bg-white p-4">
+					<img src="assets/images/camisa-claire.webp" alt="Camisa blanca de vestir con corbata estampada en una fotografía editorial." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover">
+					<h3 class="font-serif text-lg text-stone-900">Camisa Claire</h3>
+					<p class="mt-1 text-sm font-medium text-stone-900">89,00 €</p>
+					<a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver camisa Claire</a>
+				</article>
+				<article class="min-w-0 border border-stone-200 bg-white p-4">
+					<img src="assets/images/chaqueta-emile.webp" alt="Chaqueta bomber color teja fotografiada en una percha." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover">
+					<h3 class="font-serif text-lg text-stone-900">Chaqueta Émile</h3>
+					<p class="mt-1 text-sm font-medium text-stone-900">159,00 €</p>
+					<a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver chaqueta Émile</a>
+				</article>
+				<article class="min-w-0 border border-stone-200 bg-white p-4">
+					<img src="assets/images/abrigo-simone.webp" alt="Mujer con abrigo borgoña y bolsas de compra en una escena urbana." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover">
+					<h3 class="font-serif text-lg text-stone-900">Abrigo Simone</h3>
+					<p class="mt-1 text-sm font-medium text-stone-900">219,00 €</p>
+					<a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver abrigo Simone</a>
+				</article>
+			</div>
+		</section>
+		<section aria-labelledby="destacados-titulo" class="border-t border-stone-200 py-12 md:py-16">
+			<div class="mb-7">
+				<p class="text-sm font-medium uppercase text-[#656B55]">Selección de la casa</p>
+				<h2 id="destacados-titulo" class="mt-2 font-serif text-3xl text-stone-900">Más vendidos</h2>
+				<p class="mt-2 text-sm text-stone-700">Selección de demostración; no representa ventas reales.</p>
+			</div>
+			<div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+				<article class="min-w-0 border border-stone-200 bg-white p-4">
+					<img src="assets/images/camisa-claire.webp" alt="Camisa blanca de vestir con corbata estampada en una fotografía editorial." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover">
+					<h3 class="font-serif text-lg text-stone-900">Camisa Claire</h3>
+					<p class="mt-1 text-sm font-medium text-stone-900">89,00 €</p>
+					<a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver camisa Claire</a>
+				</article>
+				<article class="min-w-0 border border-stone-200 bg-white p-4">
+					<img src="assets/images/chaqueta-emile.webp" alt="Chaqueta bomber color teja fotografiada en una percha." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover">
+					<h3 class="font-serif text-lg text-stone-900">Chaqueta Émile</h3>
+					<p class="mt-1 text-sm font-medium text-stone-900">159,00 €</p>
+					<a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver chaqueta Émile</a>
+				</article>
+				<article class="min-w-0 border border-stone-200 bg-white p-4">
+					<img src="assets/images/abrigo-simone.webp" alt="Mujer con abrigo borgoña y bolsas de compra en una escena urbana." width="700" height="900" loading="lazy" class="aspect-[4/5] w-full object-cover">
+					<h3 class="font-serif text-lg text-stone-900">Abrigo Simone</h3>
+					<p class="mt-1 text-sm font-medium text-stone-900">219,00 €</p>
+					<a href="producto.html" class="mt-3 inline-block text-sm text-[#713E43] underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Ver abrigo Simone</a>
+				</article>
+			</div>
+		</section>
+		<div class="sr-only" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+			<meta itemprop="name" content="Maison Élise">
+			<link itemprop="url" href="index.html">
+		</div>
+	</main>
+	<footer class="border-t border-stone-200 bg-white">
+		<div class="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-10 sm:grid-cols-2 sm:px-6 lg:grid-cols-3 lg:px-8">
+			<section aria-labelledby="footer-categorias">
+				<h2 id="footer-categorias" class="font-serif text-lg text-stone-900">Categorías</h2>
+				<ul class="mt-3 space-y-2 text-sm text-stone-700">
+					<li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-[#713E43]" href="catalogo.html">Calzado</a></li>
+					<li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-[#713E43]" href="catalogo.html">Camisas</a></li>
+					<li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-[#713E43]" href="catalogo.html">Pantalones</a></li>
+					<li><a class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-[#713E43]" href="catalogo.html">Accesorios</a></li>
+				</ul>
+			</section>
+			<section aria-labelledby="footer-informacion">
+				<h2 id="footer-informacion" class="font-serif text-lg text-stone-900">Información</h2>
+				<ul class="mt-3 space-y-2 text-sm text-stone-700">
+					<li>Términos y condiciones</li>
+					<li>Política de privacidad</li>
+					<li>Sobre la marca</li>
+				</ul>
+			</section>
+			<section aria-labelledby="footer-contacto">
+				<h2 id="footer-contacto" class="font-serif text-lg text-stone-900">Contacto</h2>
+				<p class="mt-3 text-sm text-stone-700">Información de contacto de demostración.</p>
+			</section>
+		</div>
+	</footer>
+</body>
+</html>
