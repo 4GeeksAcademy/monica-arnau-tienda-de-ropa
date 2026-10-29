@@ -10,16 +10,18 @@
 <body class="min-h-screen bg-stone-50 font-sans text-stone-900">
 	<header class="border-b border-stone-200 bg-white">
 		<nav aria-label="Navegación principal" class="mx-auto flex max-w-7xl flex-wrap items-center gap-4 px-4 py-5 sm:px-6 lg:px-8">
-			<a href="index.html" aria-label="Maison Élise, inicio" class="font-serif text-2xl text-stone-900">Maison Élise</a>
+			<a href="index.html" aria-label="Maison Élise, inicio" aria-current="page" class="rounded-sm font-serif text-2xl text-stone-900 underline decoration-[#713E43] decoration-2 underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Maison Élise</a>
 			<a href="catalogo.html" class="text-sm text-stone-700 underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Catálogo</a>
 			<a href="carrito.html" class="text-sm text-stone-700 underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Carrito</a>
+			<a href="checkout.html" class="text-sm text-stone-700 underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#713E43]">Checkout</a>
 			<form action="catalogo.html" method="get" role="search" class="flex min-w-0 flex-1 flex-wrap items-center gap-2 sm:ml-auto sm:flex-nowrap">
 				<label for="busqueda" class="sr-only">Buscar prendas</label>
 				<input id="busqueda" name="q" type="search" placeholder="Buscar prendas" autocomplete="off" class="min-w-0 flex-1 rounded border border-stone-300 bg-white px-3 py-2 text-stone-900 placeholder:text-stone-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#713E43]">
-				<button type="submit" class="rounded bg-[#713E43] px-4 py-2 text-sm font-medium text-white hover:bg-[#5f3338] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-900">Buscar</button>
+				<button type="submit" class="min-h-11 rounded bg-[#713E43] px-4 py-2 text-sm font-medium text-white hover:bg-[#5f3338] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-900">Buscar</button>
 			</form>
-			<span aria-label="Acceso a cuenta no disponible en esta demostración" class="text-sm text-stone-700">Mi cuenta</span>
+			<span aria-label="Acceso a cuenta no disponible en esta demostración" class="text-sm text-stone-700">Mi cuenta (no disponible)</span>
 		</nav>
+		<p class="mx-auto max-w-7xl px-4 pb-3 text-xs text-stone-600 sm:px-6 lg:px-8">La búsqueda abre el catálogo de demostración; no interpreta la consulta.</p>
 	</header>
 	<main id="contenido-principal" itemscope itemtype="https://schema.org/WebPage" class="mx-auto min-h-48 w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 		<section aria-labelledby="campana-titulo" class="grid gap-8 py-10 md:grid-cols-2 md:items-center md:gap-12 md:py-16">
